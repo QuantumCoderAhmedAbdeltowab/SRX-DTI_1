@@ -2,7 +2,8 @@
 import numpy as np
 import pandas as pd
 from sklearn.svm import OneClassSVM
-
+###
+from your_module import One_SVM_US, FFS_RF
 from sklearn.model_selection import train_test_split
 
 from sklearn import metrics
