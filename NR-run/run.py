@@ -179,7 +179,7 @@ def FFS_RF(df_group):
 def main():
     # *** groups ***
     # Read drug-target interactions
-    df_inter = pd.read_csv('df_NR_AB.csv')
+    df_inter = pd.read_csv('NR-run/df_NR_AB.csv')
 
     df_inter.drop(df_inter.columns[df_inter.columns.str.contains('unnamed', case=False)], axis=1, inplace=True)
     # print(df_inter.head())
