@@ -28,12 +28,12 @@ def AAC(fastas, **kw):
 #kw={'path': r"Enzyme.txt",'order': 'ACDEFGHIKLMNPQRSTVWY'}
 #kw={'path': r"GPCR.txt", 'order': 'ACDEFGHIKLMNPQRSTVWY'}
 #kw={'path': r"Ion channel.txt", 'order': 'ACDEFGHIKLMNPQRSTVWY'}
-kw= {'path': r"Nuclear receptor.txt", 'order': 'ACDEFGHIKLMNPQRSTVWY'}
+kw= {'path': r"feature extraction/Nuclear receptor.txt", 'order': 'ACDEFGHIKLMNPQRSTVWY'}
 
 #fastas1 = readFasta.readFasta(r"Enzyme.txt")
 #fastas1 = readFasta.readFasta(r"GPCR.txt")
 #fastas1 = readFasta.readFasta(r"Ion channel.txt")
-fastas1 = readFasta.readFasta(r"Nuclear receptor.txt")
+fastas1 = readFasta.readFasta(r"feature extraction/Nuclear receptor.txt")
 
 result = AAC(fastas1, **kw)
 
