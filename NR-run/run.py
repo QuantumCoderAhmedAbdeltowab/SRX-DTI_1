@@ -60,7 +60,7 @@ def One_SVM_US(df):
     print(df_final_label_0.head())
 
     # append method
-    df_final = df_final_label_0.append(df_label_1)
+    df_final = pd.concat([df_final_label_0, df_label_1], ignore_index=True)
     df_final.reset_index(inplace=True)
     df_final.drop(['index'], axis=1, inplace=True)
     print(df_final.head())
