@@ -164,9 +164,9 @@ def FFS_RF(df_group):
     all_info.columns = ['Num_feature', 'Accuracy', 'Feature']
     all_info = all_info.sort_values(by='Accuracy', ascending=False).reset_index(drop=True)
 
-    # all_info.to_csv("subset_accuracy_NR_AB.csv", index=False)
+    all_info.to_csv("subset_accuracy_NR_AB.csv", index=False)
 
-    # f.to_csv("feature_subset_NR_AB.csv")
+    f.to_csv("feature_subset_NR_AB.csv")
 
     # Fetching the best hyperparameters
     print(rsearch_cv.best_params_)
